@@ -1,0 +1,512 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body,
+html {
+  width: 100%;
+  height: 100%;
+}
+.yt-nav {
+  background-color: #ffffff;
+  padding-bottom: 13px;
+  position: fixed;
+  top: 0;
+  z-index: 999;
+}
+.yt-nav ul {
+  margin: 0 auto;
+}
+.yt-nav .yt-right {
+  position: absolute;
+  right: 20px;
+}
+.yt-nav .yt-right button {
+  width: 150px;
+  border-radius: 0;
+  border-color: red;
+  color: black;
+  font-weight: bold;
+}
+.yt-bann {
+  width: 100%;
+  box-sizing: border-box;
+  position: relative;
+  padding: 0;
+  margin-top: 90px;
+}
+.yt-bann img {
+  width: 110%;
+}
+.yt-bann .yt-bor .yt-text {
+  height: 100%;
+  position: absolute;
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  justify-content: center;
+}
+.yt-bann .yt-bor .yt-text h1 {
+  font-size: 5.3125rem;
+  font-weight: bold;
+}
+.yt-bann .yt-bor .yt-text h3 {
+  margin: 15px 0;
+  font-weight: 400;
+}
+.yt-bann .yt-bor .yt-text span {
+  width: 200px;
+  height: 50px;
+  background-color: #ea462b;
+  color: white;
+  text-align: center;
+  line-height: 50px;
+  font-weight: 500;
+  font-size: 1.25rem;
+  transition: all 0.6s;
+}
+.yt-bann .yt-bor .yt-text span:hover {
+  background-color: white;
+  color: #ea462b;
+}
+.yt-recomm {
+  width: 100%;
+  height: 560px;
+  position: relative;
+  padding: 0;
+  background-image: url(image/bann1.jpg);
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+.yt-recomm .yt-bor .yt-text {
+  height: 34.375rem;
+  position: absolute;
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  justify-content: center;
+  color: white;
+  font-weight: bold;
+}
+.yt-recomm .yt-bor .yt-text h1 {
+  font-size: 55px;
+  font-weight: bold;
+}
+.yt-recomm .yt-bor .yt-text h3 {
+  margin: 15px 0;
+  font-weight: 400;
+  font-weight: bold;
+}
+.yt-recomm .yt-bor .yt-text h4 {
+  font-size: 4.375rem;
+  vertical-align: bottom;
+  color: #ea462b;
+  font-weight: bold;
+}
+.yt-recomm .yt-bor .yt-text h4 span {
+  position: relative;
+  top: 10px;
+  left: -25px;
+}
+.yt-recomm .yt-bor .yt-text h4 span:nth-child(2) {
+  position: relative;
+  left: -26px;
+  top: 0;
+}
+.yt-recomm .yt-bor .yt-text h4 span:nth-child(3) {
+  position: relative;
+  left: -32px;
+}
+.yt-recomm .yt-bor .yt-text span.bot {
+  width: 200px;
+  height: 50px;
+  background-color: #ea462b;
+  color: white;
+  text-align: center;
+  line-height: 50px;
+  font-weight: 500;
+  font-size: 20px;
+  transition: all 0.6s;
+}
+.yt-recomm .yt-bor .yt-text span.bot:hover {
+  background-color: white;
+  color: #ea462b;
+}
+.yt-baer {
+  width: 100%;
+  padding: 40px;
+  position: relative;
+  background-image: url(image/ban1.jpg);
+  background-position: left top;
+}
+.yt-baer .yt-try {
+  position: relative;
+}
+.yt-baer .yt-try ol {
+  position: absolute;
+  bottom: -20px;
+}
+.yt-baer .yt-try ol li {
+  width: 10px;
+  height: 10px;
+  border-radius: 10px;
+  border: 1px solid gray;
+}
+.yt-baer .yt-try ol li.active {
+  background-color: #ea462b;
+}
+.yt-baer .yt-try .yt-lr {
+  position: absolute;
+  top: calc(35% - 50px);
+  left: -70px;
+}
+.yt-baer .yt-try .yt-rt {
+  position: absolute;
+  top: calc(35% - 50px);
+  right: -80px;
+}
+.yt-baer .yt-try button {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  border: 1px solid gray;
+}
+.yt-baer .yt-try button span {
+  color: black;
+  font-weight: bold;
+}
+.yt-baer .yt-try button:hover span {
+  color: white;
+}
+.yt-baer .yt-try button:hover {
+  background-color: #ea462b;
+}
+.yt-baer .yt-top {
+  padding-top: 45px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-weight: bold;
+}
+.yt-baer .yt-top h1 {
+  font-size: 60px;
+}
+.yt-baer .yt-card {
+  height: 100%;
+  width: 100%;
+}
+.yt-baer .yt-card .card {
+  border: none;
+}
+.yt-baer .yt-card h4 {
+  color: red;
+}
+.yt-baer .yt-card a {
+  border: 1px solid red;
+  border-radius: 0;
+  padding: 10px 20px;
+  color: black;
+  background-color: transparent;
+  transition: all 0.6s;
+}
+.yt-baer .yt-card a:hover {
+  background-color: #ea462b;
+  color: white;
+}
+.yt-baer .yt-service {
+  border-top: 1px solid rgba(128, 128, 128, 0.445);
+  padding-top: 40px;
+  margin-top: 20px;
+}
+.yt-baer .yt-service .card {
+  margin: auto;
+  border: none;
+}
+.yt-baer .yt-service .card img {
+  width: 60px;
+  height: 60px;
+  margin: auto;
+}
+.yt-book {
+  width: 100%;
+  height: 500px;
+  background-image: url(image/ban2.jpg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  display: flex;
+  align-items: center;
+}
+.yt-book h1 {
+  font-weight: bold;
+  font-size: 50px;
+}
+.yt-book h4 {
+  margin: 20px;
+}
+.yt-book p {
+  width: 200px;
+  height: 50px;
+  line-height: 50px;
+  background-color: #ea462b;
+  margin: auto;
+  transition: all 0.6s;
+}
+.yt-book p:hover {
+  background-color: white;
+  color: #ea462b;
+}
+.yt-ppb {
+  padding-top: 100px;
+  background-image: url(image/ban3.jpg);
+  padding-bottom: 50px;
+}
+.yt-ppb .yt-fade {
+  margin: auto;
+}
+.yt-ppb .yt-fade .yt-img {
+  width: 445px;
+}
+.yt-ppb h1 {
+  font-weight: bold;
+  font-size: 40px;
+}
+.yt-ppb .yt-kap {
+  display: flex;
+  align-items: center;
+  height: 100px;
+}
+.yt-ppb .yt-right {
+  background-color: white;
+  margin: auto;
+}
+.yt-ppb .card {
+  border: none;
+}
+.yt-ppb span {
+  font-weight: bold;
+  font-size: 25px;
+}
+.yt-ppb .yt-midd {
+  margin: 60px 0;
+}
+.yt-adver {
+  width: 100%;
+  height: 650px;
+  padding: 40px 0px;
+  background-image: url(image/ban6.jpg);
+}
+.yt-adver h1 {
+  font-size: 50px;
+}
+.yt-adver h4 {
+  font-size: 20px;
+  margin-bottom: 25px;
+}
+.yt-adver .yt-card .card {
+  padding: 40px;
+  width: 350px;
+  border: none;
+}
+.yt-adver .yt-card .card .card-body {
+  border-top: 1px solid rgba(128, 128, 128, 0.452);
+  font-weight: bold;
+  font-size: 20px;
+}
+.yt-adver .yt-card img {
+  width: 60px;
+  height: 60px;
+  margin: auto;
+}
+.yt-adver .yt-card h4 {
+  margin-top: 10px;
+}
+.yt-food {
+  padding: 0;
+}
+.yt-food div {
+  position: relative;
+}
+.yt-food div::before {
+  content: '';
+  width: 100%;
+  height: 100%;
+  background-color: rgba(15, 15, 15, 0.233);
+  position: absolute;
+  top: 0;
+  display: block;
+}
+.yt-food div:hover::before {
+  background-color: transparent;
+}
+.yt-new {
+  padding-top: 40px;
+  background-image: url(image/ban7.jpg);
+  font-weight: bold;
+}
+.yt-new .container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.yt-new .top {
+  color: white;
+}
+.yt-new .top h1 {
+  font-size: 50px;
+  font-weight: bold;
+}
+.yt-new .card {
+  border: none;
+  width: 350px;
+  box-sizing: border-box;
+  align-items: center;
+  margin: 20px 0px;
+}
+.yt-new .card .card-body {
+  width: 270px;
+}
+.yt-new .card .card-body h5 {
+  margin: auto;
+  font-size: 22px;
+  font-weight: bold;
+}
+.yt-new .card h6 {
+  width: 230px;
+  border-top: 1px solid gray;
+  margin: auto;
+  padding: 20px 0px;
+}
+.yt-new button {
+  color: white;
+  width: 186px;
+  height: 49px;
+  border-radius: 0;
+  margin: 70px 0px;
+}
+.yt-footer {
+  padding: 30px 0px;
+}
+.yt-footer h5 {
+  margin: 20px 0px;
+}
+.yt-footer span i {
+  margin-right: 20px;
+}
+.yt-footer h3 {
+  font-weight: bold;
+}
+.yt-footer .input-group .btn {
+  border-radius: 0px;
+  border-left: none;
+  background-color: #ea462b;
+  color: white;
+  text-align: center;
+  line-height: 32px;
+  font-weight: bold;
+}
+.yt-footer .input-group .btn::before {
+  content: '';
+  display: block;
+  width: 100px;
+  height: 100%;
+  background-color: transparent;
+  position: absolute;
+  top: 0;
+  margin-left: -12.5px;
+  opacity: 0;
+}
+.yt-footer .input-group .btn:hover::before {
+  opacity: 1;
+  background-color: rgba(252, 255, 253, 0.452);
+}
+.yt-footer .input-group input {
+  border-radius: 0;
+  outline: none;
+  border: 1px solid gray;
+  padding: 12px;
+}
+.yt-footer .boott {
+  margin-top: 10px;
+  padding-top: 10px;
+  width: 100%;
+  height: 80px;
+  border-top: 1px solid gray;
+}
+.yt-footer .boott span {
+  color: skyblue;
+}
+@media screen and (max-width: 1200px) {
+  .yt-bann h1 {
+    font-size: 4rem !important;
+  }
+  .yt-bann h3 {
+    font-size: 22px !important;
+  }
+  .yt-bann span {
+    width: 180px;
+    height: 45px;
+    font-size: 1rem !important;
+  }
+  .yt-recomm .yt-text h3 {
+    font-size: 25px !important;
+  }
+  .yt-recomm .yt-text h1 {
+    font-size: 45px !important;
+  }
+  .yt-service h4 {
+    font-size: 14px !important;
+  }
+  .yt-service h6 {
+    font-size: 14px !important;
+  }
+  .yt-baer .yt-card .card {
+    width: 16.5rem !important;
+  }
+  .yt-book h4 {
+    font-size: 20px !important;
+  }
+  .yt-ppb .yt-img {
+    width: 370px;
+  }
+  .yt-adver .yt-card .card {
+    width: 290.5px !important;
+  }
+}
+@media screen and (max-width: 992px) {
+  .yt-bann h1 {
+    font-size: 4rem !important;
+  }
+  .yt-bann h3 {
+    font-size: 18px !important;
+  }
+  .yt-bann span {
+    width: 180px;
+    height: 45px;
+    font-size: 1rem !important;
+  }
+  .yt-recomm .yt-text h3 {
+    font-size: 20px !important;
+  }
+  .yt-recomm .yt-text h1 {
+    font-size: 40px !important;
+  }
+  .yt-service h4 {
+    font-size: 12px !important;
+  }
+  .yt-service h6 {
+    font-size: 12px !important;
+  }
+  .yt-baer .yt-card .card {
+    width: 12.5rem !important;
+  }
+  .yt-ppb .yt-img {
+    width: 330px;
+  }
+  .yt-adver .yt-card .card {
+    width: 220.5px !important;
+  }
+  .yt-adver .yt-card .card .card-body {
+    font-size: 16px;
+  }
+}
+/*# sourceMappingURL=./index.css.map */

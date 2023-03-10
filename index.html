@@ -1,0 +1,660 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous" />
+    <!-- 字体 -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Niconne|Poppins:300,400,500,600,700,800&display=swap" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="./index.css">
+    <style>
+        .carousel-fade .carousel-inner .carousel-item {
+            -webkit-transform: translateX(0);
+            transform: translateX(0);
+            transition-property: opacity;
+        }
+        
+        .carousel-fade .carousel-inner .carousel-item,
+        .carousel-fade .carousel-inner .active.carousel-item-left,
+        .carousel-fade .carousel-inner .active.carousel-item-right {
+            opacity: 0;
+        }
+        
+        .carousel-fade .carousel-inner .active,
+        .carousel-fade .carousel-inner .carousel-item-next.carousel-item-left,
+        .carousel-fade .carousel-inner .carousel-item-prev.carousel-item-right {
+            opacity: 1;
+        }
+        
+        .carousel-vertical .carousel-inner .carousel-item-next.carousel-item-left,
+        .carousel-vertical .carousel-inner .carousel-item-prev.carousel-item-right {
+            -webkit-transform: translateY(0);
+            transform: translateY(0);
+        }
+        
+        .carousel-vertical .carousel-inner .active.carousel-item-left,
+        .carousel-vertical .carousel-inner .carousel-item-prev {
+            -webkit-transform: translateY(-100%);
+            transform: translateY(-100%);
+        }
+        
+        .carousel-vertical .carousel-inner .active.carousel-item-right,
+        .carousel-vertical .carousel-inner .carousel-item-next {
+            -webkit-transform: translateY(100%);
+            transform: translateY(100%);
+        }
+    </style>
+</head>
+
+<body>
+    <!-- 导航 -->
+    <div class="container-fluid yt-nav">
+        <div class="container">
+            <nav class="navbar navbar-expand-lg navbar-light">
+                <a class="navbar-brand" href="#">
+                    <img src="./image/logo.png" alt="">
+                </a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarText">
+                    <ul class="navbar-nav mr-auto">
+                        <li class="nav-item active">
+                            <a class="nav-link text-danger" href="#">Home <span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Features</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Pricing</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Pricing</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Pricing</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Pricing</a>
+                        </li>
+                    </ul>
+
+                </div>
+            </nav>
+        </div>
+    </div>
+    <!-- 🤔轮播 -->
+    <div class="container-fluid yt-bann">
+        <div id="slides" class="carousel slide carousel-vertical" data-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <div class="container">
+                        <div class="yt-bor row">
+                            <div class="col-8 yt-text">
+                                <h1>Try Our New<br>Burger Menu</h1>
+                                <h3>It's about good food and fresh ingredients.</h3>
+                                <span>View Our menu</span>
+                            </div>
+                        </div>
+                    </div>
+                    <img src="./image/slide1.jpg" class="d-block" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <div class="container">
+                        <div class="yt-bor row">
+                            <div class="col-8 yt-text">
+                                <h1> Food For<br>Your Soul</h1>
+                                <h3>It's about good food and fresh ingredients.</h3>
+                                <span>View Our menu</span>
+                            </div>
+                        </div>
+                    </div>
+                    <img src="./image/slide2.jpg" class="d-block" alt="...">
+                </div>
+            </div>
+
+            <a class="carousel-control-prev" href="#slides" data-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+            </a>
+            <a class="carousel-control-next" href="#slides" data-slide="next">
+                <span class="carousel-control-next-icon"></span>
+            </a>
+        </div>
+    </div>
+    <!-- 🤔Hamburger  -->
+    <div class="container-fluid yt-recomm">
+        <div class="container">
+            <div class="yt-bor row">
+                <div class="col-8 yt-text">
+                    <h3>Best Dish Of The Day</h3>
+                    <h1>Hamburger &<br>Sweet Potato Fries</h1>
+                    <h4> $1 <span class="jx">9</span><span>.</span><span>99</span></h4>
+                    <span class="bot">Add To Cart</span>
+                </div>
+            </div>
+        </div>
+        <!-- <img src="./image/1 (1).jpg" alt=""> -->
+    </div>
+    <!-- 🤔Popular Dishes -->
+    <div class="container-fluid yt-baer">
+
+        <div class="container">
+            <div class="yt-top">
+                <h1>Popular Dishes</h1>
+                <h3>Try the delicious new dishes from our chef.</h3>
+            </div>
+            <div class="container yt-try">
+                <div class="container">
+                    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+                        <ol class="carousel-indicators">
+                            <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                            <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                        </ol>
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <div class="row">
+                                    <div class="col-xl-4 col-lg-4 col-md-4 text-center yt-card ">
+                                        <div class="card" style="width: 20.5rem;">
+                                            <img src="./image/2.jpg" class="card-img-top" alt="...">
+                                            <div class="card-body">
+                                                <h5 class="card-title">Classic Havana Burger<br>Grilled beef patty,Turkey rashes,
+                                                </h5>
+                                                <p class="card-text"> and burger relish.</p>
+                                                <h4>$21.00</h4>
+                                                <a href="#" class="btn btn-primary">Go somewhere</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-xl-4 col-lg-4 col-md-4 text-center yt-card">
+                                        <div class="card" style="width: 20.5rem;">
+                                            <img src="./image/3.jpg" class="card-img-top" alt="...">
+                                            <div class="card-body">
+                                                <h5 class="card-title">Classic Havana Burger<br>Grilled beef patty,Turkey rashes,
+                                                </h5>
+                                                <p class="card-text"> and burger relish.</p>
+                                                <h4>$21.00</h4>
+                                                <a href="#" class="btn btn-primary">Go somewhere</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-xl-4 col-lg-4 col-md-4 text-center yt-card">
+                                        <div class="card" style="width: 20.5rem;">
+                                            <img src="./image/4.jpg" class="card-img-top" alt="...">
+                                            <div class="card-body">
+                                                <h5 class="card-title">Classic Havana Burger<br>Grilled beef patty,Turkey rashes,
+                                                </h5>
+                                                <p class="card-text"> and burger relish.</p>
+                                                <h4>$21.00</h4>
+                                                <a href="#" class="btn btn-primary">Go somewhere</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="row">
+                                    <div class="col-xl-4 col-lg-4 col-md-4 text-center yt-card ">
+                                        <div class="card" style="width: 20.5rem;">
+                                            <img src="./image/1.jpg" class="card-img-top" alt="...">
+                                            <div class="card-body">
+                                                <h5 class="card-title">Classic Havana Burger<br>Grilled beef patty,Turkey rashes,
+                                                </h5>
+                                                <p class="card-text"> and burger relish.</p>
+                                                <h4>$21.00</h4>
+                                                <a href="#" class="btn btn-primary">Go somewhere</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-xl-4 col-lg-4 col-md-4 text-center yt-card">
+                                        <div class="card" style="width: 20.5rem;">
+                                            <img src="./image/3.jpg" class="card-img-top" alt="...">
+                                            <div class="card-body">
+                                                <h5 class="card-title">Classic Havana Burger<br>Grilled beef patty,Turkey rashes,
+                                                </h5>
+                                                <p class="card-text"> and burger relish.</p>
+                                                <h4>$21.00</h4>
+                                                <a href="#" class="btn btn-primary">Go somewhere</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-xl-4 col-lg-4 col-md-4 text-center yt-card">
+                                        <div class="card" style="width: 20.5rem;">
+                                            <img src="./image/5.jpg" class="card-img-top" alt="...">
+                                            <div class="card-body">
+                                                <h5 class="card-title">Classic Havana Burger<br>Grilled beef patty,Turkey rashes,
+                                                </h5>
+                                                <p class="card-text"> and burger relish.</p>
+                                                <h4>$21.00</h4>
+                                                <a href="#" class="btn btn-primary">Go somewhere</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                        <button class="carousel-control-prev yt-lr" type="button" data-target="#carouselExampleIndicators" data-slide="prev">
+                            <!-- <span class="sr-only">Previous</span> -->
+                            <span>&lt;</span>
+                        </button>
+                        <button class="carousel-control-next yt-rt" type="button" data-target="#carouselExampleIndicators" data-slide="next">
+                            <!-- <span class="sr-only">Previous</span> -->
+                            <span>&gt;</span>
+                        </button>
+                        <!-- <button class="carousel-control-next yt-rt" type="button " data-target="#carouselExampleIndicators " data-slide="next ">
+                            <!-- <span class="sr-only ">Next</span> -->
+                        </button> -->
+                    </div>
+                </div>
+            </div>
+
+            <!-- 下部分 -->
+            <div class="row yt-service ">
+                <div class="col-md-6 col-xl-3 text-center ">
+                    <div class="card " style="width: 16rem; ">
+                        <img src="./image/icon1.png " class="card-img-top " alt="... ">
+                        <div class="card-body ">
+                            <h4>Fresh Ingredients</h4>
+                            <h6>Sed egestas, ante vulputa eros pede vitae luctus metus augue.</h6>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-xl-3 text-center ">
+                    <div class="card " style="width: 16rem; ">
+                        <img src="./image/icon2.png " class="card-img-top " alt="... ">
+                        <div class="card-body ">
+                            <h4>Fresh Ingredients</h4>
+                            <h6>Sed egestas, ante vulputa eros pede vitae luctus metus augue.</h6>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-xl-3 text-center ">
+                    <div class="card " style="width: 16rem; ">
+                        <img src="./image/icon3.png " class="card-img-top " alt="... ">
+                        <div class="card-body ">
+                            <h4>Fresh Ingredients</h4>
+                            <h6>Sed egestas, ante vulputa eros pede vitae luctus metus augue.</h6>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-xl-3 text-center ">
+                    <div class="card " style="width: 16rem; ">
+                        <img src="./image/icon4.png " class="card-img-top " alt="... ">
+                        <div class="card-body ">
+                            <h4>Fresh Ingredients</h4>
+                            <h6>Sed egestas, ante vulputa eros pede vitae luctus metus augue.</h6>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- 🤔Book a Table -->
+    <div class="container-fluid yt-book ">
+        <div class="container text-center text-white ">
+            <h1>Book a Table</h1>
+            <h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sedolorm reminusto<br>consectetur adipiscing elitut aliquip.
+            </h4>
+            <p>Reservation</p>
+        </div>
+    </div>
+
+    <!-- 🤔Pizza -->
+    <div class="container-fluid yt-ppb ">
+        <div class="container ">
+            <!-- 上 -->
+            <div class="row ">
+                <div class="col-lg-6 col-md-8 col-xl-6 yt-fade ">
+                    <img src="./image/ab1.jpg " class="yt-img ">
+                </div>
+                <div class="col-lg-6 col-md-8 col-xl-6 yt-right ">
+                    <h1>Pizza</h1>
+                    <div class="card mb-3 " style="max-width: 87.5rem; ">
+                        <div class="row no-gutters yt-kap ">
+                            <div class="col-md-2 ">
+                                <img src="./image/th1.jpg ">
+                            </div>
+                            <div class="col-md-10 ">
+                                <div class="card-body ">
+                                    <h5 class="card-title ">Card title..................... <span class="text-danger ">$21.00</span></h5>
+                                    <p class="card-text ">This is a wiasdsa asdad asdasdsder card with su </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card mb-3 " style="max-width: 87.5rem; ">
+                        <div class="row no-gutters yt-kap ">
+                            <div class="col-md-2 ">
+                                <img src="./image/th2.jpg ">
+                            </div>
+                            <div class="col-md-10 ">
+                                <div class="card-body ">
+                                    <h5 class="card-title ">Card title..................... <span class="text-danger ">$21.00</span></h5>
+                                    <p class="card-text ">This is a wiasdsa asdad asdasdsder card with su </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card mb-3 " style="max-width: 87.5rem; ">
+                        <div class="row no-gutters yt-kap ">
+                            <div class="col-md-2 ">
+                                <img src="./image/th3.jpg ">
+                            </div>
+                            <div class="col-md-10 ">
+                                <div class="card-body ">
+                                    <h5 class="card-title ">Card title..................... <span class="text-danger ">$21.00</span></h5>
+                                    <p class="card-text ">This is a wiasdsa asdad asdasdsder card with su </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card mb-3 " style="max-width: 87.5rem; ">
+                        <div class="row no-gutters yt-kap ">
+                            <div class="col-md-2 ">
+                                <img src="./image/th4.jpg ">
+                            </div>
+                            <div class="col-md-10 ">
+                                <div class="card-body ">
+                                    <h5 class="card-title ">Card title..................... <span class="text-danger ">$21.00</span></h5>
+                                    <p class="card-text ">This is a wiasdsa asdad asdasdsder card with su </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card mb-3 " style="max-width: 87.5rem; ">
+                        <div class="row no-gutters yt-kap ">
+                            <div class="col-md-2 ">
+                                <img src="./image/th5.jpg ">
+                            </div>
+                            <div class="col-md-10 ">
+                                <div class="card-body ">
+                                    <h5 class="card-title ">Card title..................... <span class="text-danger ">$21.00</span></h5>
+                                    <p class="card-text ">This is a wiasdsa asdad asdasdsder card with su </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- 中 -->
+            <div class="row yt-midd ">
+                <div class="col-lg-6 col-md-8 col-xl-6 yt-right ">
+                    <h1>Pasta</h1>
+                    <div class="card mb-3 " style="max-width: 87.5rem; ">
+                        <div class="row no-gutters yt-kap ">
+                            <div class="col-md-2 ">
+                                <img src="./image/th6.jpg ">
+                            </div>
+                            <div class="col-md-10 ">
+                                <div class="card-body ">
+                                    <h5 class="card-title ">Card title..................... <span class="text-danger ">$21.00</span></h5>
+                                    <p class="card-text ">This is a wiasdsa asdad asdasdsder card with su </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card mb-3 " style="max-width: 87.5rem; ">
+                        <div class="row no-gutters yt-kap ">
+                            <div class="col-md-2 ">
+                                <img src="./image/th7.jpg ">
+                            </div>
+                            <div class="col-md-10 ">
+                                <div class="card-body ">
+                                    <h5 class="card-title ">Card title..................... <span class="text-danger ">$21.00</span></h5>
+                                    <p class="card-text ">This is a wiasdsa asdad asdasdsder card with su </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card mb-3 " style="max-width: 87.5rem; ">
+                        <div class="row no-gutters yt-kap ">
+                            <div class="col-md-2 ">
+                                <img src="./image/th8.jpg ">
+                            </div>
+                            <div class="col-md-10 ">
+                                <div class="card-body ">
+                                    <h5 class="card-title ">Card title..................... <span class="text-danger ">$21.00</span></h5>
+                                    <p class="card-text ">This is a wiasdsa asdad asdasdsder card with su </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-8 col-xl-6 yt-fade ">
+                    <img src="./image/ab2.jpg " class="yt-img ">
+                </div>
+            </div>
+            <!-- 下 -->
+            <div class="row ">
+                <div class="col-lg-6 col-md-8 col-xl-6 yt-fade ">
+                    <img src="./image/ab3.jpg " class="yt-img ">
+                </div>
+                <div class="col-lg-6 col-md-8 col-xl-6 yt-right ">
+                    <h1>Burger</h1>
+                    <div class="card mb-3 " style="max-width: 87.5rem; ">
+                        <div class="row no-gutters yt-kap ">
+                            <div class="col-md-2 ">
+                                <img src="./image/th9.jpg ">
+                            </div>
+                            <div class="col-md-10 ">
+                                <div class="card-body ">
+                                    <h5 class="card-title ">Card title..................... <span class="text-danger ">$21.00</span></h5>
+                                    <p class="card-text ">This is a wiasdsa asdad asdasdsder card with su </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card mb-3 " style="max-width: 87.5rem; ">
+                        <div class="row no-gutters yt-kap ">
+                            <div class="col-md-2 ">
+                                <img src="./image/th10.jpg ">
+                            </div>
+                            <div class="col-md-10 ">
+                                <div class="card-body ">
+                                    <h5 class="card-title ">Card title..................... <span class="text-danger ">$21.00</span></h5>
+                                    <p class="card-text ">This is a wiasdsa asdad asdasdsder card with su </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card mb-3 " style="max-width: 87.5rem; ">
+                        <div class="row no-gutters yt-kap ">
+                            <div class="col-md-2 ">
+                                <img src="./image/th11.jpg ">
+                            </div>
+                            <div class="col-md-10 ">
+                                <div class="card-body ">
+                                    <h5 class="card-title ">Card title..................... <span class="text-danger ">$21.00</span></h5>
+                                    <p class="card-text ">This is a wiasdsa asdad asdasdsder card with su </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card mb-3 " style="max-width: 87.5rem; ">
+                        <div class="row no-gutters yt-kap ">
+                            <div class="col-md-2 ">
+                                <img src="./image/th12.jpg ">
+                            </div>
+                            <div class="col-md-10 ">
+                                <div class="card-body ">
+                                    <h5 class="card-title ">Card title..................... <span class="text-danger ">$21.00</span></h5>
+                                    <p class="card-text ">This is a wiasdsa asdad asdasdsder card with su </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Testimonials -->
+    <div class="container-fluid yt-adver ">
+        <div class="container text-center ">
+            <h1>Testimonials</h1>
+            <h4>They Say About Us</h4>
+        </div>
+        <div class="container yt-card ">
+            <div class="row ">
+                <div class="col-4 text-center ">
+                    <div class="card " style="width: 350.4px; ">
+                        <img src="./image/test1.jpg " class="rounded-circle ">
+                        <h4>Jaun Asea</h4>
+                        <p>Manger</p>
+                        <div class="card-body ">
+                            <p class="card-text ">" Donec nee justo eget felisfacilisis fezmentun. Aliquanporttitor mauzis sit anet orciAerean digrissirn pellerte "</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-4 text-center ">
+                    <div class="card " style="width: 350.4px; ">
+                        <img src="./image/test1.jpg " class="rounded-circle ">
+                        <h4>Jaun Asea</h4>
+                        <p>Manger</p>
+                        <div class="card-body ">
+                            <p class="card-text ">" Donec nee justo eget felisfacilisis fezmentun. Aliquanporttitor mauzis sit anet orciAerean digrissirn pellerte "</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-4 text-center ">
+                    <div class="card " style="width: 350.4px; ">
+                        <img src="./image/test1.jpg " class="rounded-circle ">
+                        <h4>Jaun Asea</h4>
+                        <p>Manger</p>
+                        <div class="card-body ">
+                            <p class="card-text ">" Donec nee justo eget felisfacilisis fezmentun. Aliquanporttitor mauzis sit anet orciAerean digrissirn pellerte "</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ✔四个图片 -->
+    <div class="container-fluid d-flex justify-content-center yt-food ">
+        <div>
+            <img src="./image/16.jpg " class="img-fluid ">
+        </div>
+        <div>
+            <img src="./image/21.jpg " class="img-fluid ">
+        </div>
+        <div>
+            <img src="./image/31.jpg " class="img-fluid ">
+        </div>
+        <div>
+            <img src="./image/41.jpg " class="img-fluid ">
+        </div>
+
+        <!-- <div class="row ">
+            <div class="col-4 ">
+                <img src="./image/16.jpg " alt=" ">
+            </div>
+            <div class="col-4 ">
+                <img src="./image/21.jpg " alt=" ">
+            </div>
+            <div class="col-4 ">
+                <img src="./image/31.jpg " alt=" ">
+            </div>
+            <div class="col-4 ">
+                <img src="./image/41.jpg " alt=" ">
+            </div>
+        </div> -->
+    </div>
+
+    <div class="container-fluid yt-new ">
+        <div class="container ">
+            <div class="top text-center ">
+                <h1>Latest News</h1>
+                <h5>Promotion in a Cafe</h5>
+            </div>
+            <div class="row ">
+                <div class="col-xl-4 col-lg-6 col-md-12 ">
+                    <div class="container ">
+                        <div class="card " style="width: 350.4px; ">
+                            <img src="./image/17.jpg " class="card-img-top img-fluid " alt="... ">
+                            <div class="card-body text-center ">
+                                <h5>Etiam sodales, erat non.</h5>
+                                <p class="card-text ">Donec nec justo eget felis facilisis fermentum. Aliquam porttitor mauris sit amet orci. Aenean dignissim pellente squefelis.</p>
+                            </div>
+                            <h6 class="text-center ">24.04.2020 / 2 comments</h6>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-4 col-lg-6 col-md-12 ">
+                    <div class="container ">
+                        <div class="card " style="width: 350.4px; ">
+                            <img src="./image/22.jpg " class="card-img-top img-fluid " alt="... ">
+                            <div class="card-body text-center ">
+                                <h5>Etiam sodales, erat non.</h5>
+                                <p class="card-text ">Donec nec justo eget felis facilisis fermentum. Aliquam porttitor mauris sit amet orci. Aenean dignissim pellente squefelis.</p>
+                            </div>
+                            <h6 class="text-center ">24.04.2020 / 2 comments</h6>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-4 col-lg-6 col-md-12 ">
+                    <div class="container ">
+                        <div class="card " style="width: 350.4px; ">
+                            <img src="./image/32.jpg " class="card-img-top img-fluid " alt="... ">
+                            <div class="card-body text-center ">
+                                <h5>Etiam sodales, erat non.</h5>
+                                <p class="card-text ">Donec nec justo eget felis facilisis fermentum. Aliquam porttitor mauris sit amet orci. Aenean dignissim pellente squefelis.</p>
+                            </div>
+                            <h6 class="text-center ">24.04.2020 / 2 comments</h6>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <button type="button " class="btn btn-outline-danger ">View All News</button>
+        </div>
+    </div>
+    <!-- 页脚 -->
+    <div class="container-fluid yt-footer ">
+        <div class="container ">
+            <div class="row ">
+                <div class="col-xl-4 col-md-6 col-lg-4 ">
+                    <img src="./image/logo.png " alt=" ">
+                    <h5>
+                        Donec nec justo eget felis facilisis fermentum. Aliquam porttitor mauris sit amet orci. Aenean dignissim pellente squefelis.
+                    </h5>
+                    <span><i class="bi bi-facebook "></i> <i class="bi bi-twitter "></i><i
+                            class="bi bi-instagram "></i></span>
+                </div>
+
+                <div class="col-xl-4 col-md-6 col-lg-4 ">
+                    <h3>Newsletter</h3>
+                    <h5>
+                        Morbi in sem quis dui placerat ornare. Pellentesque odionisi euismod in pharetra
+                    </h5>
+                    <div class="input-group mb-3 ">
+                        <input type="text " class=" " placeholder="enter your email ">
+                        <span class="btn ">Subscribe</span>
+                        <!-- <button type="button " class="btn btn-secondary bg-danger "></button> -->
+                    </div>
+                </div>
+                <div class="col-xl-4 col-md-6 col-lg-4 ">
+                    <h3>How To Find Us</h3>
+                    <h5><i class="bi bi-geo-alt "></i>Avenue Marina 34568 NY (U.S)</h5>
+                    <h5><i class="bi bi-telephone-fill "></i>+0987 193-34-76</h5>
+                    <h5><i class="bi bi-envelope "></i>statumsupport@mail.com</h5>
+                </div>
+            </div>
+            <div class="boott d-flex justify-content-between ">
+                <p class="p ">Copyright © 2020 Koad Bistro. All rights <span>17sucai</span>.</p>
+                <div class="p1 ">BACK TO TOP</div>
+            </div>
+        </div>
+    </div>
+
+</body>
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js " integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj " crossorigin="anonymous "></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js " integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct " crossorigin="anonymous "></script>
+<script>
+    console.log($);
+</script>
+
+</html>
